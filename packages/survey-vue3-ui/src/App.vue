@@ -10,23 +10,12 @@ const json = {
    "name": "page1",
    "elements": [
     {
-     "type": "checkbox",
-     "choices": [
-        { text: "OptionA", value: "a" },
-        { text: "OptionB", value: "b" },
-        { text: "OptionC", value: "c" },
-        { text: "OptionD", value: "d" },
-     ],
-     "choicesOrder": "random",
-     "randomSubset": ["a", "b"],
-     "dummy": "three",
-     "name": "question1"
+     "type": "maxdiff",
+     "name": "panel1",
+     "description": "description goes at the top",
+     "title": "title above each item",
+     "choices": ["a", "b", "c", "d"],
     },
-    {
-     "type": "text",
-     "name": "question2",
-     "visibleIf": "{question1} notempty"
-    }
    ]
   }
  ]
