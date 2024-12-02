@@ -4,29 +4,17 @@ import { SurveyModel, StylesManager } from "survey-core";
 import Survey from "./Survey.vue";
 
 const json = {
- "logoPosition": "right",
  "pages": [
   {
    "name": "page1",
    "elements": [
     {
-     "type": "checkbox",
-     "choices": [
-        { text: "OptionA", value: "a" },
-        { text: "OptionB", value: "b" },
-        { text: "OptionC", value: "c" },
-        { text: "OptionD", value: "d" },
-     ],
-     "choicesOrder": "random",
-     "randomSubset": ["a", "b"],
-     "dummy": "three",
-     "name": "question1"
+     "type": "maxdiff",
+     "name": "maxdiffQ",
+     "description": "Optional description at the top",
+     "title": "title above each item",
+     "choices": ["a", "b", "c", "d"],
     },
-    {
-     "type": "text",
-     "name": "question2",
-     "visibleIf": "{question1} notempty"
-    }
    ]
   }
  ]
