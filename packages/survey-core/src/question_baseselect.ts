@@ -1694,7 +1694,7 @@ export class QuestionSelectBase extends Question {
     const subsetIndex: number[] = [];
     for (let i = 0; i < array.length; i++) {
       const value = array[i].value;
-      if (valueSubset.includes(value)) {
+      if (Helpers.includes(valueSubset, value)) {
         subsetItems.push(array[i]);
         subsetIndex.push(i);
       }
